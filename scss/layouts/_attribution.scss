@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.attribution {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
