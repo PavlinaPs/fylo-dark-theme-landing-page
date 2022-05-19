@@ -1,0 +1,138 @@
+@use '../abstracts' as *;
+
+.info {
+    margin-top: 0.8rem;
+    text-align: center;
+    z-index: 10;
+    border: 1px solid sandybrown;
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 13% 1fr 1fr 13%;
+        gap: 4rem;
+        grid-template-areas: 
+            '. access security .'
+            '. collaboration store .';
+    }
+}
+
+.info__img {
+    display: block;
+    width: 100%;
+}
+
+.info__title {
+    font-family: var(--ff-headings);
+    font-size: var(--fs-h2-mobile);
+    font-weight: var(--fw-semiBold);
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-h2-desktop);
+    }
+}
+
+.info__text {
+    margin-top: 1.2rem;
+    padding: 0 3.3rem;
+    line-height: 1.5;
+
+    @media (min-width: $desktop) {
+        margin-top: 1rem;
+        padding: 0 5rem;
+    }
+}
+
+.access {
+    grid-area: access;
+
+    & > img {
+        padding: 0 41.5%;
+    }
+
+    & > h2 {
+        margin-top: 3.6rem;
+    }
+
+    @media (min-width: $desktop) {
+        & > img {
+            padding: 0 41%;
+        }
+
+        & > h2 {
+            margin-top: 2.9rem;
+        }
+
+        & > p {
+            padding: 0 7rem;
+        }
+    }
+}
+
+.security {
+    grid-area: security;
+    margin-top: 8.7rem;
+
+    & > img {
+        padding: 0 42.7%;
+    }
+
+    & > h2 {
+        margin-top: 3rem;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+
+        & > h2 {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.collaboration {
+    grid-area: collaboration;
+    margin-top: 9.2rem;
+
+    & > img {
+        padding: 0 41.2%;
+    }
+
+    & > h2 {
+        margin-top: 3.8rem;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 5.3rem;
+    }
+}
+
+.store {
+    grid-area: store;
+    margin-top: 9.7rem;
+
+    & > img {
+        padding: 0 41%;
+    }
+
+    & > h2 {
+        margin-top: 4.2rem;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 5.2rem;
+
+        & > img {
+            padding: 0 40%;
+        }
+
+        & > h2 {
+            margin-top: 4rem;
+        }
+
+        & > p {
+            padding: 0 7rem;
+        }
+    }
+}
+
+
