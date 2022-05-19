@@ -8,14 +8,14 @@ body {
     font-weight: var(--fw-regular);
     font-size: var(--fs-normal-mobile);
     color: var(--clr-white);
-    background-color: var(--bg-main);
+    //background-color: var(--bg-main);
 
     @media (min-width: var($desktop)) {
         font-size: var(--fs-normal-desktop);
     }
 }
 
-.landing {
+.landing__container {
     width: 37.5rem;
     border: 1px solid lightcoral;
 

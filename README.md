@@ -81,6 +81,25 @@ How elegant!
     }
 }
 ```
+
+#### Different background color following curvy background image within a section of the mobile layout
+The thing is, that in the mobile layout, the curvy background image is positioned in the middle of the section. Hence I need the background color to change below the background image. I solved it with multiple background - the image and a gradient with a color stop just under the part of the background image that takes full width of the section. Will see, whether this solution holds after I remove the width and make the layout fully responsive. Just in case I put a default background color.
+
+```css
+.landing__files {
+    ...
+    background-color: var(--bg-intro-email);
+    background-image: 
+        url(../../images/bg-curvy-mobile.svg), 
+        linear-gradient(var(--bg-intro-email) 51%, var(--bg-main) 49%);
+    background-position: 0% 40%, center;
+    background-repeat: no-repeat, no-repeat;
+}
+```
+
+
+
+
 ```html
 <a class="navigation__link" href="#" title="Features">Features</a>
 ```

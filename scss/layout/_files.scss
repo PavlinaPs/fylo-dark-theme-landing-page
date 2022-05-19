@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.landing__files {
+    position: relative;
+    padding: 4.5rem 3.3rem 9rem 3.4rem;
+    background-color: var(--bg-intro-email);
+    background-image: 
+        url(../../images/bg-curvy-mobile.svg), 
+        linear-gradient(var(--bg-intro-email) 51%, var(--bg-main) 49%);
+    background-position: 0% 40%, center;
+    background-repeat: no-repeat, no-repeat;
+    border: 1px solid darkorchid;
+
+    @media (min-width: $desktop) {
+        padding: 7rem 35.5rem 16rem 36rem;
+        background-image: url(../../images/bg-curvy-desktop.svg);
+        background-position: bottom;
+    }
+}
+
+.files__img {
+    width: 100%;
+}
+
+.files__title {
+    margin-top: 3rem;
+    font-family: var(--ff-headings);
+    font-size: var(--fs-h1-mobile);
+    font-weight: var(--fw-semiBold);
+    line-height: 1.5;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+        margin-top: 3.5rem;
+        font-size: var(--fs-h1-desktop);
+    }
+}
+
+.files__text {
+    margin-top: 1.6rem;
+    padding-inline: 1rem;
+    line-height: 1.55;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+        margin-top: 2.8rem;
+        padding-inline: 4.5rem;
+        font-size: var(--fs-normal-desktop);
+    }
+}
+
+.files__button {
+    display: block;
+    width: 24rem;
+    margin: 3.1rem auto;
+    padding: 1.6rem 5rem;
+    font-family: var(--ff-headings);
+    font-size: var(--fs-normal-mobile);
+    font-weight: var(--fw-semiBold);
+    color: inherit;
+    background-color: var(--clr-gradient-2);
+    background: linear-gradient(45deg, var(--clr-gradient-1), var(--clr-gradient-2));
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+
+    @media (min-width: $desktop) {
+        width: 28rem;
+        margin-top:3rem;
+        padding: 1.8rem 0;
+        font-size: var(--fs-button-desktop);
+        border-radius: 3rem;
+    }
+
+    &:hover,
+    &:active {
+        background: linear-gradient(45deg, var(--clr-gradient-1-1), var(--clr-gradient-2-2));
+    }
+}
