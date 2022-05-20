@@ -33,6 +33,7 @@ a {
   --fs-h1-desktop: 4.1rem;
   --fs-button-desktop: 1.6rem;
   --fs-h2-desktop: 2rem;
+  --fs-productive-desktop:1.6rem;
   --fs-normal-mobile: 1.35rem;
   --fs-nav-mobile: 1.2rem;
   --fs-h1-mobile: 2.4rem;
@@ -62,7 +63,6 @@ body {
   font-weight: var(--fw-regular);
   font-size: var(--fs-normal-mobile);
   color: var(--clr-white);
-  background-color: var(--bg-main);
 }
 @media (min-width: var(55em)) {
   body {
@@ -73,6 +73,7 @@ body {
 .landing__container {
   width: 37.5rem;
   border: 1px solid lightcoral;
+  background-color: var(--bg-main);
 }
 @media (min-width: 55em) {
   .landing__container {
@@ -341,4 +342,96 @@ body {
   .store > p {
     padding: 0 7rem;
   }
+}
+
+.productive {
+  margin-top: 16rem;
+  border: 1px solid pink;
+}
+@media (min-width: 55em) {
+  .productive {
+    display: grid;
+    grid-template-columns: 52.5% 47.5%;
+    align-items: center;
+    margin-top: 13rem;
+    padding: 0 7rem;
+  }
+}
+
+.productive__img {
+  width: 100%;
+  padding: 0 3.5rem;
+}
+
+.productive__text-container {
+  margin-top: 4.5rem;
+  padding: 0 2.6rem;
+}
+@media (min-width: 55em) {
+  .productive__text-container {
+    padding-right: 3rem;
+  }
+}
+
+.productive__title {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-h2-mobile);
+}
+@media (min-width: 55em) {
+  .productive__title {
+    padding-right: 6rem;
+    font-size: var(--fs-h1-desktop);
+  }
+}
+
+.productive__text {
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+@media (min-width: 55em) {
+  .productive__text {
+    font-size: var(--fs-productive-desktop);
+  }
+}
+
+.productive__link {
+  margin-top: 1.3rem;
+  color: var(--clr-gradient-1);
+}
+@media (min-width: 55em) {
+  .productive__link {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+}
+.productive__link:hover a {
+  color: var(--clr-white);
+  border-bottom: 0.2rem solid var(--clr-white);
+}
+.productive__link:hover .productive__arrow {
+  display: none;
+}
+.productive__link:hover .productive__arrow--hover {
+  display: inline-block;
+}
+
+.productive__link a {
+  padding: 0.5rem 0;
+  color: var(--clr-gradient-1);
+  font-size: var(--fs-nav-mobile);
+  font-weight: var(--fw-regular);
+  border-bottom: 0.2rem solid var(--clr-gradient-1);
+}
+@media (min-width: 55em) {
+  .productive__link a {
+    font-size: var(--fs-nav-desktop);
+  }
+}
+.productive__link a .productive__arrow,
+.productive__link a .productive__arrow--hover {
+  vertical-align: text-bottom;
+  padding-left: 0.4rem;
+}
+.productive__link a .productive__arrow--hover {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
