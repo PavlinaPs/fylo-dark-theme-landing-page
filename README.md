@@ -96,7 +96,29 @@ The thing is, that in the mobile layout, the curvy background image is positione
     background-repeat: no-repeat, no-repeat;
 }
 ```
+#### Quotes behind the blockquote container
+I couldn't get the quotes as a ::before pseudo-element behind the blockquote container. I looked up the solution on Stack Overflow: [Is it possible to set the stacking order of pseudo-elements below their parent element?](https://stackoverflow.com/questions/3032856/is-it-possible-to-set-the-stacking-order-of-pseudo-elements-below-their-parent-e) and this works:
+```css
+/* parent element */
+.testimonials {
+    position: relative;
+    z-index: 1;
+    ...
+}
 
+/* pseudo-element owner, no z-index */
+.testimonials__container {
+    position: relative;
+    ...
+}
+
+/* pseudo-element itself */
+.testimonials__container:first-child::before {
+  position: absolute;
+  z-index: -1;
+  ...
+}
+```
 
 
 

@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.access__footer {
+    position: relative;
+    top: -35.8rem;
+    height: auto;
+    background-color: var(--bg-footer);
+    padding-top: 20rem;
+
+    @media (min-width: $desktop) {
+        top: -27.3rem;
+    }
+}
