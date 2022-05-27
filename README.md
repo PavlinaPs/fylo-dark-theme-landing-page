@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/PavlinaPs/fylo-dark-theme-landing-page
+- Live Site URL: https://pavlinaps.github.io/fylo-dark-theme-landing-page/
 
 ## My process
 
