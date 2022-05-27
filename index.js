@@ -12,6 +12,5 @@ form.addEventListener('submit', (e) => {
     if(!email.value || !emailValidationRegex.test(email.value)) {
         e.preventDefault();
         error.innerText = errorMessage;
-        
     }
 })

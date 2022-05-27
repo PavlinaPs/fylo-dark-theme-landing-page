@@ -233,14 +233,14 @@ body {
   background: linear-gradient(45deg, var(--clr-gradient-1-1), var(--clr-gradient-2-2));
 }
 
-.info {
+.landing__info {
   margin-top: 0.8rem;
   text-align: center;
   z-index: 10;
   border: 1px solid sandybrown;
 }
 @media (min-width: 55em) {
-  .info {
+  .landing__info {
     display: grid;
     grid-template-columns: 13% 1fr 1fr 13%;
     gap: 4rem;
@@ -257,6 +257,7 @@ body {
   font-family: var(--ff-headings);
   font-size: var(--fs-h2-mobile);
   font-weight: var(--fw-semiBold);
+  text-align: center;
 }
 @media (min-width: 55em) {
   .info__title {
@@ -268,6 +269,7 @@ body {
   margin-top: 1.2rem;
   padding: 0 3.3rem;
   line-height: 1.5;
+  text-align: center;
 }
 @media (min-width: 55em) {
   .info__text {
@@ -357,12 +359,12 @@ body {
   }
 }
 
-.productive {
+.landing__productive {
   margin-top: 16rem;
   border: 1px solid pink;
 }
 @media (min-width: 55em) {
-  .productive {
+  .landing__productive {
     display: grid;
     grid-template-columns: 52.5% 47.5%;
     align-items: center;
@@ -449,20 +451,20 @@ body {
   display: none;
 }
 
-.testimonials {
+.landing__testimonials {
   position: relative;
   margin-top: 15.1rem;
   padding-bottom: 33.7rem;
   border: 1px solid greenyellow;
 }
 @media (min-width: 55em) {
-  .testimonials {
-    margin-top: 15.2rem;
-    padding: 0 14rem 36rem 14rem;
+  .landing__testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 4rem;
+    margin-top: 15.2rem;
+    padding: 0 14rem 36rem 14rem;
     z-index: 1;
   }
 }
@@ -546,7 +548,7 @@ body {
   }
 }
 
-.access {
+.landing__access {
   position: relative;
   top: -17.7rem;
   width: 90%;
@@ -558,7 +560,7 @@ body {
   z-index: 10;
 }
 @media (min-width: 55em) {
-  .access {
+  .landing__access {
     top: -16rem;
     width: 60%;
     padding: 4.3rem 7.7rem 4rem;
@@ -686,7 +688,7 @@ body {
   background: linear-gradient(45deg, var(--clr-gradient-1-1), var(--clr-gradient-2-2));
 }
 
-.footer {
+.landing__footer {
   position: relative;
   margin-top: -35.8rem;
   height: auto;
@@ -694,7 +696,7 @@ body {
   background-color: var(--bg-footer);
 }
 @media (min-width: 55em) {
-  .footer {
+  .landing__footer {
     margin-top: -27.3rem;
     padding: 20rem 2.8rem 8.5rem 10.5rem;
   }
