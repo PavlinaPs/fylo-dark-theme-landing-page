@@ -16,11 +16,9 @@ body {
 
 .landing__container {
     width: 37.5rem;
-    border: 1px solid lightcoral;
     background-color: var(--bg-main);
 
     @media (min-width: $desktop) {
         width: 144rem;
-        border: 1px solid yellowgreen;
     }
 }
